@@ -9,6 +9,7 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { LoggedIn } from './components/state/LoggedIn';
 import { Status } from './components/Status';
+import { User } from './components/User';
 
 function App() {
   const personName = {
@@ -44,8 +45,9 @@ function App() {
       <Greet name='Ramdani' isLoggedIn={true} /> */}
       {/* <Button handleClick={(event, id) => { console.log('Click', event, id) }}></Button>
       <Input value='' handleChange={(event) => console.log(event)} /> */}
-      <Container styles={{ border: '1px solid black', padding: '1rem' }} />
-      <LoggedIn />
+      {/* <Container styles={{ border: '1px solid black', padding: '1rem' }} />
+      <LoggedIn /> */}
+      <User />
     </div>
   );
 }

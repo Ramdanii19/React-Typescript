@@ -1,5 +1,6 @@
 import './App.css';
 import { Button } from './components/Button';
+import { Container } from './components/Container';
 import { Greet } from './components/Greet';
 import { Heading } from './components/Heading';
 import { Input } from './components/Input';
@@ -40,8 +41,9 @@ function App() {
         <Heading>Oscar goes to!!!</Heading>
       </Oscar>
       <Greet name='Ramdani' isLoggedIn={true} /> */}
-      <Button handleClick={(event, id) => { console.log('Click', event, id) }}></Button>
-      <Input value='' handleChange={(event) => console.log(event)} />
+      {/* <Button handleClick={(event, id) => { console.log('Click', event, id) }}></Button>
+      <Input value='' handleChange={(event) => console.log(event)} /> */}
+      <Container styles={{ border: '1px solid black', padding: '1rem' }} />
     </div>
   );
 }

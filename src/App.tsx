@@ -9,7 +9,8 @@ import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
 import { LoggedIn } from './components/state/LoggedIn';
 import { Status } from './components/Status';
-import { User } from './components/User';
+import { User } from './components/state/User';
+import { Counter } from './components/state/Counter';
 
 function App() {
   const personName = {
@@ -48,6 +49,7 @@ function App() {
       {/* <Container styles={{ border: '1px solid black', padding: '1rem' }} />
       <LoggedIn /> */}
       {/* <User /> */}
+      <Counter />
     </div>
   );
 }
